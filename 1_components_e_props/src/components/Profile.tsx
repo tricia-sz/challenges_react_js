@@ -1,16 +1,12 @@
-interface ProfileProps {
-    name: string
-    age: number
-    height: number
-    job: string
-}
-export function Profile({name, age, height,job}:ProfileProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function Profile({ name, age, job }: any) {
   return (
-   <>
-      <p>Nome: {name}</p>
+    <>
+      <h3>Nome: {name}</h3>
       <p>Idade: {age}</p>
-      <p>Altura: {height}</p>
       <p>Profissão: {job}</p>
-   </>
-  )
+    </>
+  );
 }
+
+export default Profile;
