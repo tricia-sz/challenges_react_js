@@ -1,4 +1,5 @@
 import Clock from "./components/Clock"
+import DataFetcher from "./components/DataFetcher"
 import TodoList from "./components/TodoList"
 import Togle from "./components/Togle"
 import TogleMultiplo from "./components/TogleMultiplo"
@@ -15,6 +16,8 @@ function App() {
       <Clock />
       <h2>Challenge 4: Todo List</h2>
       <TodoList />
+      <h2>Challenge 5: Simulando Requisicao API</h2>
+      <DataFetcher />
 
 
     </>
