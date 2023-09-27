@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -15,10 +15,23 @@ function TodoList() {
     <div>
       <input value={task} onChange={(e) => setTask(e.target.value)} />
       <button onClick={addTodo}>Adicionar</button>
-      <ul>
+      {/* <ul>
         {todos.map((todo) => (
           <li key={todo.id}>{todo.task}</li>
         ))}
+      </ul> */}
+      <h2>5 - Filtro</h2>
+      <input
+        value={filter}
+        onChange={(e) => setFilter(e.target.value)}
+        placeholder="Filtrar tarefas..."
+      />
+      <ul>
+        {todos
+          .filter((todo) => todo.task.includes(filter))
+          .map((todo) => (
+            <li key={todo.id}>{todo.task}</li>
+          ))}
       </ul>
     </div>
   );
