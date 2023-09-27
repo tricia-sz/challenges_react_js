@@ -12,3 +12,11 @@ Challenge 2: Usando Estado
 [] Crie um component semelhante ao Togle
 [] Ele deve conter dois estados
 [] O numero de clicks no botao deve ser exibido e autalizado a cada click
+____________________________________________________
+
+Ex 9: Relógio em tempo real
+● Crie um componente Clock;
+● Ele deve armazenar a hora atual em um state;
+● Utilize o useEffect para atualizar a hora a cada um
+segundo;
+● A hora pode ser obtida com a classe Date;
