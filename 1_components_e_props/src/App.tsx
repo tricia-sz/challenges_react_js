@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/Counter";
 import Family from "./components/Family";
 import { HelloName } from "./components/HelloName";
 import { HelloWorld } from "./components/HelloWorld";
@@ -25,6 +26,8 @@ function App() {
       <Family members={members} />
       <h2>5 - Componente de Classe</h2>
       <ProfileClass name={"Rodrigo"} age={45} job={"Lavrador"} />
+      <h2>6 - Componente com Estado</h2>
+      <Counter/>
 
     </>
   );
