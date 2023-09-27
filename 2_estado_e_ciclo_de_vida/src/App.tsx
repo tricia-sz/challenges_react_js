@@ -1,4 +1,5 @@
 import Clock from "./components/Clock"
+import TodoList from "./components/TodoList"
 import Togle from "./components/Togle"
 import TogleMultiplo from "./components/TogleMultiplo"
 
@@ -12,6 +13,9 @@ function App() {
       <TogleMultiplo />
       <h2>Challenge 3: Relogio em tempo real</h2>
       <Clock />
+      <h2>Challenge 4: Todo List</h2>
+      <TodoList />
+
 
     </>
   )
