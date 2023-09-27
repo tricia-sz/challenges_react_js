@@ -1,6 +1,7 @@
 import './App.css'
 import { HelloName } from './components/HelloName'
 import { HelloWorld } from './components/HelloWorld'
+import { Profile } from './components/Profile'
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
     <HelloWorld />
     <h2>2 - Usando props na solução</h2>
     <HelloName name='Trícia'/>
+    <h2>3 - Multiplas Props</h2>
+    <Profile name={"Arthur"} age={10} height={1.75} job={"Engenheiro de Dados"}  />
    </>
   )
 }
